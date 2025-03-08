@@ -1,0 +1,20 @@
+// default font family
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+
+//default root
+:root {
+	/* Font Family */
+	--body-font: "Oswald", serif;
+	--sub-font:  "Oswald", serif;
+	--heading-font:  "Oswald", serif;
+	/* Transition */
+	--transition: all 0.5s ease-in-out;
+
+	/* Color styles */
+	--white-clr: #fff;
+	--black-clr: #000;
+	--base-clr: #519bad;
+	--title-clr: #6c757d;
+}
