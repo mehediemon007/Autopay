@@ -23,6 +23,9 @@ $(document).ready(() => {
 			preloaders.forEach((preloader) => {
 				preloader.style.display = "none"; // Hide each preloader
 			});
+			
+			window.location.href = "/login.html";
+
 		}, 1200); // 1.2s delay
 	});
 
