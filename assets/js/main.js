@@ -24,8 +24,9 @@ $(document).ready(() => {
 				preloader.style.display = "none"; // Hide each preloader
 			});
 			
-			if(this.window.location.href == 'laoding.html'){
-				window.location.href = "/login.html";
+			if (window.location.pathname === "/loading.html") {
+				// You're on the loading.html page
+				window.location.replace("login.html");
 			}
 
 		}, 1200); // 1.2s delay
