@@ -24,7 +24,9 @@ $(document).ready(() => {
 				preloader.style.display = "none"; // Hide each preloader
 			});
 			
-			window.location.href = "/login.html";
+			if(this.window.location.href == 'laoding.html'){
+				window.location.href = "/login.html";
+			}
 
 		}, 1200); // 1.2s delay
 	});
