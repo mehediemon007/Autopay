@@ -43,7 +43,7 @@
         <!-- Header -->
 
         <!-- Global Section -->
-        <section class="global-section pb-20 custom-form-validation">
+        <section class="global-section review-section pb-20 custom-form-validation">
             <div class="container">
                 <div class="progress-container-wrap mb-xxl-10 mb-xl-10 mb-lg-9 mb-md-7 mb-sm-6 mb-5">
                     <div class="progress-container" data-percentage='85'>
@@ -58,7 +58,7 @@
                     
                     <div class="row">
                         <div class="col-md-6">
-                            <div>
+                            <div class="single-review">
                                 <h5>Personal Information</h5>
                                 <p><b>First Name:</b>Mehedi Hasan</p>
                                 <p><b>Last Name:</b>Emon</p>
@@ -69,7 +69,7 @@
                                 <p><b>Email:</b>hasan@gmail.com</p>
                                 <p><b>Mobile Phone:</b>555-712-2661</p>
                             </div>
-                            <div>
+                            <div class="single-review">
                                 <h5>Employment Information</h5>
                                 <p><b>Current Employment Type:</b>Full Time</p>
                                 <p><b>Employment Name:</b>Devid</p>
@@ -83,7 +83,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div>
+                            <div class="single-review">
                                 <h5>Residence Information</h5>
                                 <p><b>Residence Type:</b>Own</p>
                                 <p><b>Address:</b>360 N Rockingham Ave
@@ -92,7 +92,7 @@
                                 <p><b>Monthly Residence Payment:</b>$22,222.00</p>
                                 <p><b>Lived Here More Than 2 Years:</b>No</p>
                             </div>
-                            <div>
+                            <div class="single-review">
                                 <h5>Residence Information</h5>
                                 <p><b>Year:</b>2025</p>
                                 <p><b>Make:</b>Ford</p>
@@ -105,23 +105,21 @@
                     <div>
                         <h5>Social Security Number</h5>
                         <p>Providing your Social Security Number now expedites the process and helps us lock in the most accurate rates. All information is securely encrypted.</p>
-                        <div class="autoplay-grp">
+                        <div class="autoplay-grp my-4">
                             <label for="number" class="label-title sr-only">
                                 Mobile Phone Number
                             </label>
-                            <input type="text" id="formattedInput" required
+                            <input type="text" id="formattedInput" placeholder="xxx-xxx-xxxx" required
                                 class="input-field border p-3" />
                         </div>
                     </div>
 
-                    <div>
+                    <div class="mt-4">
                         <h5>Terms</h5>
-                        <p>By submitting this application, you acknowledge that you have read and agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy (Terms);</a> that you are at least 18 years of age and that all the information provided is true, correct and complete and you grant permission to AUTOPAY and/or its Lenders to obtain a copy of your credit report.</p>
-                        <div class="autoplay-grp">
-                            <input type="checkbox" id="terms" required
-                                class="input-field inline-block border p-3" />
-                            
-                            <label for="terms" class="label-title">
+                        <p class="pb-4">By submitting this application, you acknowledge that you have read and agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy (Terms);</a> that you are at least 18 years of age and that all the information provided is true, correct and complete and you grant permission to AUTOPAY and/or its Lenders to obtain a copy of your credit report.</p>
+                        <div class="autoplay-grp my-4 d-flex align-items-center gap-2">
+                            <input type="checkbox" id="terms" required class="form-check-input custom-checkbox" />
+                            <label for="terms" class="form-check-label fw-semibold">
                                 I AGREE TO ALL OF THE ABOVE
                             </label>
                         </div>

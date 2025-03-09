@@ -26,7 +26,7 @@ $(document).ready(() => {
 			
 			if (window.location.pathname === "/loading.html") {
 				// You're on the loading.html page
-				window.location.replace("login.html");
+				window.location.href="./login.html"
 			}
 
 		}, 1200); // 1.2s delay
