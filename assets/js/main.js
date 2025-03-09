@@ -17,7 +17,7 @@ $(document).ready(() => {
 	}
 
 	//Card Open
-	window.addEventListener("load", function () {
+	window.onload = function () {
 		setTimeout(() => {
 			const preloaders = document.querySelectorAll(".loader-bg"); // Select all elements with class "loader-bg"
 			console.log(preloaders.length)
@@ -31,7 +31,7 @@ $(document).ready(() => {
 			}
 
 		}, 1500); // 1.5s delay
-	});
+	};
 
 	//Bootstrap Tooltip
 	var tooltipTriggerList = [].slice.call(
