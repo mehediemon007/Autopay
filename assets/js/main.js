@@ -15,31 +15,7 @@ $(document).ready(() => {
 		percentageEl.innerText = percentage;
 		percentageEl.style.left = percentage;
 	}
-
-	//Card Open
-	window.onload = function () {
-		setTimeout(() => {
-			const preloaders = document.querySelectorAll(".loader-bg");
-			console.log("Preloaders found: ", preloaders.length); // Debugging line to check if elements are found
-			
-			if (preloaders.length > 0) {
-				preloaders.forEach((preloader) => {
-					preloader.style.display = "none"; // Hide each preloader
-				});
-				console.log("Preloaders hidden."); // Debugging line to confirm hiding
-			} else {
-				console.log("No preloaders found."); // Debugging line if no preloaders are found
-			}
-			
-			if (window.location.pathname === "/loading.html") {
-				console.log("Redirecting to login.html"); // Debugging line before redirect
-				window.location.replace("./login.html");
-			}
 	
-		}, 1500); // 1.5s delay
-	};
-	
-
 	//Bootstrap Tooltip
 	var tooltipTriggerList = [].slice.call(
 		document.querySelectorAll('[data-bs-toggle="tooltip"]')
@@ -59,4 +35,18 @@ $(document).ready(() => {
 	//--== Nice Select ==--//
 	$("select").niceSelect();
 	//--== Nice Select ==--//
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+	setTimeout(() => {
+		const preloaders = document.querySelectorAll(".loader-bg");
+		preloaders.forEach((preloader) => {
+			preloader.classList.add("active");
+		});
+
+		if (window.location.pathname === "/loading.html") {
+			window.location.replace("./login.html");
+		}
+
+	}, 1200);
 });
