@@ -17,7 +17,7 @@ $(document).ready(() => {
 	}
 
 	//Card Open
-	window.addEventListener("load", function () {
+	window.addEventListener("DOMContentLoaded", function () {
 		setTimeout(() => {
 			const preloaders = document.querySelectorAll(".loader-bg"); // Select all elements with class "loader-bg"
 			preloaders.forEach((preloader) => {
