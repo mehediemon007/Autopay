@@ -1257,6 +1257,10 @@ iframe {
   justify-content: center;
 }
 
+.loader-bg.active {
+  display: none !important;
+}
+
 .loader {
   width: 50px;
   padding: 8px;
