@@ -20,6 +20,7 @@ $(document).ready(() => {
 	window.addEventListener("load", function () {
 		setTimeout(() => {
 			const preloaders = document.querySelectorAll(".loader-bg"); // Select all elements with class "loader-bg"
+			console.log(preloaders.length)
 			preloaders.forEach((preloader) => {
 				preloader.style.display = "none"; // Hide each preloader
 			});
