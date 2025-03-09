@@ -29,7 +29,7 @@ $(document).ready(() => {
 				window.location.replace("./login.html");
 			}
 
-		}, 1200); // 1.2s delay
+		}, 1500); // 1.5s delay
 	});
 
 	//Bootstrap Tooltip
