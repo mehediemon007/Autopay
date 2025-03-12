@@ -46,98 +46,172 @@
         <section class="global-section pb-20 custom-form-validation">
             <div class="container">
                 <div class="progress-container-wrap mb-xxl-10 mb-xl-10 mb-lg-9 mb-md-7 mb-sm-6 mb-5">
-                    <div class="progress-container" data-percentage='50'>
+                    <div class="progress-container" data-percentage='70'>
                         <div class="progress"></div>
                         <div class="percentage">0%</div>
                     </div>
                 </div>
                 <h4 class="head-title mb-lg-10 mb-md-9 mb-7 text-center">
-                    Now, a little about you.
-                    <button type="button" class="pt-3" data-bs-toggle="tooltip" data-bs-placement="top"
-                        data-bs-custom-class="custom-tooltip"
-                        data-bs-title="The model of your vehicle is referring to the vehicle's name or range of products. Please call 1-844-276-3272">
-                        <svg width="24" height="24" aria-hidden="true" focusable="false" data-prefix="fas"
-                            data-icon="info-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            class="svg-inline--fa fa-info-circle">
-                            <path fill="currentColor"
-                                d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
-                            </path>
-                        </svg>
-                    </button>
+                    Residence Information
                 </h4>
                 <div class="row g-4 autoplay-form-section">
+                    <div class="col-md-6">
+                        <button type="button" class="back-btn qurite-btn w-100">
+                            Same as Applicant
+                        </button>
+                    </div>
+                    <div class="col-md-6">
+                        <button type="button" class="back-btn qurite-btn w-100">
+                            Different Address
+                        </button>
+                    </div>
+                    <div class="col-md-12 mt-6">
+                        <div class="autoplay-grp">
+                            <label for="address" class="label-title">Co-borrower Address</label>
+                            <input type="text" id="address" required placeholder="Street">
+                        </div>
+                    </div>
                     <div class="col-md-12">
+                        <div class="autoplay-grp">
+                            <input type="text" required placeholder="Apartment, building, floor (optional)">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="autoplay-grp">
+                            <input type="text" required placeholder="City">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
                         <div class="autoplay-grp">
                             <select name="state">
                                 <option value="1">
-                                    Relationship to applicant
+                                    State
                                 </option>
                                 <option value="2">
-                                    Spouse
+                                    ID
                                 </option>
                                 <option value="3">
-                                    Parent
+                                    IL
                                 </option>
                                 <option value="4">
-                                    Child
+                                    IN
                                 </option>
                                 <option value="5">
-                                    Relative
+                                    IA
                                 </option>
                                 <option value="6">
-                                    Cohabitant
+                                    KS
                                 </option>
                                 <option value="7">
-                                    Others
+                                    KY
+                                </option>
+                                <option value="8">
+                                    LA
+                                </option>
+                                <option value="9">
+                                    TX
                                 </option>
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-5 col-md-6">
+                    <div class="col-md-12">
                         <div class="autoplay-grp">
-                            <label for="fname" class="label-title">First Name</label>
-                            <input type="text" id="fname" required>
-                        </div>
-                    </div>
-                    <div class="col-md-5 col-md-6">
-                        <div class="autoplay-grp">
-                            <label for="lname" class="label-title">Last Name</label>
-                            <input type="text" id="lname" required>
+                            <input type="text" required placeholder="Zip Code">
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="autoplay-grp">
-                            <label for="emails" class="label-title">
-                                Email
+                            <label for="residence-payment" class="label-title">
+                                Co-borrower Monthly Residence Payment
                             </label>
-                            <input type="email" id="emails" required>
+                            <input type="number" id="residence-payment" placeholder="$0.00" required>
                         </div>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-6 mt-6">
                         <div class="autoplay-grp">
                             <label for="number" class="label-title">
-                                Mobile Phone Number
+                                How long have you lived here?
                             </label>
-                            <input type="text" id="formattedInput" required class="input-field border p-4" />
+                            <select id="residence" name="residence">
+                                <option value="1">
+                                    0 years
+                                </option>
+                                <option value="2">
+                                    1 year
+                                </option>
+                                <option value="3">
+                                    2 years
+                                </option>
+                                <option value="4">
+                                    3 years
+                                </option>
+                                <option value="5">
+                                    4 years
+                                </option>
+                                <option value="6">
+                                    5 years
+                                </option>
+                                <option value="7">
+                                    6 years
+                                </option>
+                                <option value="4">
+                                    7 years
+                                </option>
+                                <option value="1">
+                                    8 years
+                                </option>
+                                <option value="2">
+                                    9 year
+                                </option>
+                                <option value="3">
+                                    10+ years
+                                </option>
+                            </select>
                         </div>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-6 mt-6">
                         <div class="autoplay-grp">
-                            <label for="dob" class="label-title">
-                                Date of Birth
-                                <button type="button" class="pt-3" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    data-bs-custom-class="custom-tooltip"
-                                    data-bs-title="The make of your vehicle is referring to the brand or maker of your vehicle. Please call 1-844-276-3272">
-                                    <svg width="24" height="24" aria-hidden="true" focusable="false" data-prefix="fas"
-                                        data-icon="info-circle" role="img" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 512 512" class="svg-inline--fa fa-info-circle">
-                                        <path fill="currentColor"
-                                            d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
-                                        </path>
-                                    </svg>
-                                </button>
+                            <label for="number" class="label-title hidden-label">
+                                How long have you lived here?
                             </label>
-                            <input type="date" id="dob" required placeholder="MM//DD/YYYY">
+                            <select id="residence" name="residence">
+                                <option value="1">
+                                    0 months
+                                </option>
+                                <option value="2">
+                                    1 month
+                                </option>
+                                <option value="3">
+                                    2 months
+                                </option>
+                                <option value="4">
+                                    3 months
+                                </option>
+                                <option value="1">
+                                    4 months
+                                </option>
+                                <option value="2">
+                                    5 months
+                                </option>
+                                <option value="3">
+                                    6 months
+                                </option>
+                                <option value="4">
+                                    7 months
+                                </option>
+                                <option value="1">
+                                    8 months
+                                </option>
+                                <option value="2">
+                                    9 month
+                                </option>
+                                <option value="3">
+                                    10 months
+                                </option>
+                                <option value="4">
+                                    11 months
+                                </option>
+                            </select>
                         </div>
                     </div>
 
@@ -146,7 +220,7 @@
                         <i class="fa-solid fa-lock"></i> Your information is secured
                     </div>
                     <div class="text-center d-grid gap-3 justify-content-center">
-                        <a href="residencecoborrower.html" class="hidable-btn2 active">
+                        <a href="coborroweremployment.html" class="hidable-btn2 active">
                             Next
                         </a>
                         <a href="trim-details.html" class="back-btn">
