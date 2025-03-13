@@ -69,3 +69,19 @@ document.addEventListener("DOMContentLoaded", function () {
         addressToggle.style.display = "none";
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+	const jobTypeSelect = document.getElementById("job-type");
+	const jobInputs = document.querySelectorAll(".jod-hide-input");
+
+	// Initially hide job-related inputs
+	jobInputs.forEach(input => input.style.display = "none");
+
+	jobTypeSelect.addEventListener("change", function () {
+		if (this.value !== "0") {
+			jobInputs.forEach(input => input.style.display = "block");
+		} else {
+			jobInputs.forEach(input => input.style.display = "none");
+		}
+	});
+});
