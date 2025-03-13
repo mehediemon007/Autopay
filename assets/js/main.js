@@ -111,3 +111,24 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const incomeSelect = document.getElementById("residence-select");
+    const incomeInputs = document.querySelectorAll(".adrs-hide-input");
+
+    // Initially hide income-related inputs
+    incomeInputs.forEach(input => input.style.display = "none");
+	
+    // Initialize nice-select
+    $(incomeSelect).niceSelect();
+
+    // Manually trigger the change event after nice-select initialization
+    $(incomeSelect).on('change', function () {
+        console.log("Nice-select income dropdown changed, value:", this.value);
+        if (this.value === "2") {
+            incomeInputs.forEach(input => input.style.display = "block");
+        } else {
+            incomeInputs.forEach(input => input.style.display = "none");
+        }
+    });
+});
