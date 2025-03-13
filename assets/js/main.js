@@ -50,3 +50,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	}, 1200);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const sameAddressBtn = document.getElementById("same-addres");
+    const diffAddressBtn = document.getElementById("diff-adres");
+    const addressToggle = document.querySelector(".input-toggle");
+
+    // Initially hide the address form
+    addressToggle.style.display = "none";
+
+    // Show address form when clicking "Different Address"
+    diffAddressBtn.addEventListener("click", function () {
+        addressToggle.style.display = "block";
+    });
+
+    // Hide address form when clicking "Same as Applicant"
+    sameAddressBtn.addEventListener("click", function () {
+        addressToggle.style.display = "none";
+    });
+});
