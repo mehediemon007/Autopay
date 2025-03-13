@@ -57,7 +57,7 @@
                 <div class="row g-4 autoplay-form-section">
                     <div class="col-md-12">
                         <div class="autoplay-grp">
-                            <label for="residence" class="label-title">Current Employment Type</label>
+                            <label for="job-type" class="label-title">Current Co-borrower Employment Type</label>
                             <select id="job-type" name="job-type">
                                 <option value="0">
                                     Please Select
@@ -77,15 +77,15 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12 job-hide-input">
                         <div class="autoplay-grp">
-                            <label for="fname" class="label-title">Employer Name</label>
+                            <label for="fname" class="label-title">Co-borrower Employer Name</label>
                             <input type="text" id="fname" required>
                         </div>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12 job-hide-input">
                         <div class="autoplay-grp">
-                            <label for="lname" class="label-title">Job Title</label>
+                            <label for="lname" class="label-title">Co-Borrower Job Title</label>
                             <input type="text" id="lname" required>
                         </div>
                     </div>
@@ -108,6 +108,93 @@
                             <input type="number" id="residence-payment" placeholder="$0.00" required>
                         </div>
                     </div>
+                    <div class="col-md-6 mt-6 job-hide-input">
+                        <div class="autoplay-grp">
+                            <label for="number" class="label-title">
+                                How long have they been employed?
+                            </label>
+                            <select id="residence" name="residence">
+                                <option value="1">
+                                    0 years
+                                </option>
+                                <option value="2">
+                                    1 year
+                                </option>
+                                <option value="3">
+                                    2 years
+                                </option>
+                                <option value="4">
+                                    3 years
+                                </option>
+                                <option value="5">
+                                    4 years
+                                </option>
+                                <option value="6">
+                                    5 years
+                                </option>
+                                <option value="7">
+                                    6 years
+                                </option>
+                                <option value="4">
+                                    7 years
+                                </option>
+                                <option value="1">
+                                    8 years
+                                </option>
+                                <option value="2">
+                                    9 year
+                                </option>
+                                <option value="3">
+                                    10+ years
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-6 job-hide-input">
+                        <div class="autoplay-grp">
+                            <label for="number" class="label-title hidden-label">
+                                How long have you lived here?
+                            </label>
+                            <select id="residence" name="residence">
+                                <option value="1">
+                                    0 months
+                                </option>
+                                <option value="2">
+                                    1 month
+                                </option>
+                                <option value="3">
+                                    2 months
+                                </option>
+                                <option value="4">
+                                    3 months
+                                </option>
+                                <option value="1">
+                                    4 months
+                                </option>
+                                <option value="2">
+                                    5 months
+                                </option>
+                                <option value="3">
+                                    6 months
+                                </option>
+                                <option value="4">
+                                    7 months
+                                </option>
+                                <option value="1">
+                                    8 months
+                                </option>
+                                <option value="2">
+                                    9 month
+                                </option>
+                                <option value="3">
+                                    10 months
+                                </option>
+                                <option value="4">
+                                    11 months
+                                </option>
+                            </select>
+                        </div>
+                    </div>
                     <div>
                         <b>Additional Income (optional)</b>
                         <p>Please provide any and all additional income you receive on a regular basis</p>
@@ -119,16 +206,16 @@
                             </label>
                             <select id="income" name="income">
                                 <option value="1">
-                                    I do not have additional income
+                                    Co-borrower does not have additional income
                                 </option>
                                 <option value="2">
-                                    I do  have additional income
+                                    Co-borrower has additional income
                                 </option>
                             </select>
                         </div>
                     </div>
 
-                    <div class="col-md-12">
+                    <div class="col-md-12 income-hide-input">
                         <div class="autoplay-grp">
                             <label for="number" class="label-title">
                                 Income Type
@@ -159,7 +246,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-12">
+                    <div class="col-md-12 income-hide-input">
                         <div class="autoplay-grp">
                             <label for="number" class="label-title">
                                 Income Frequency
@@ -181,7 +268,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-12">
+                    <div class="col-md-12 income-hide-input">
                         <div class="autoplay-grp">
                             <label for="residence-payment" class="label-title">
                                 Gross Annual Income
@@ -197,7 +284,7 @@
                         <i class="fa-solid fa-lock"></i> Your information is secured
                     </div>
                     <div class="text-center d-grid gap-3 justify-content-center">
-                        <a href="review.html" class="hidable-btn2 active">
+                        <a href="residence.html" class="hidable-btn2 active">
                             Next
                         </a>
                         <a href="trim-details.html" class="back-btn">

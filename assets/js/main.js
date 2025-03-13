@@ -71,17 +71,43 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-	const jobTypeSelect = document.getElementById("job-type");
-	const jobInputs = document.querySelectorAll(".jod-hide-input");
+    const jobTypeSelect = document.getElementById("job-type");
+    const jobInputs = document.querySelectorAll(".job-hide-input");
 
-	// Initially hide job-related inputs
-	jobInputs.forEach(input => input.style.display = "none");
+    // Initially hide job-related inputs
+    jobInputs.forEach(input => input.style.display = "none");
 
-	jobTypeSelect.addEventListener("change", function () {
-		if (this.value !== "0") {
-			jobInputs.forEach(input => input.style.display = "block");
-		} else {
-			jobInputs.forEach(input => input.style.display = "none");
-		}
-	});
+    // Initialize nice-select
+    $(jobTypeSelect).niceSelect();
+
+    // Manually trigger the change event after nice-select initialization
+    $(jobTypeSelect).on('change', function () {
+        console.log("Nice-select dropdown changed, value:", this.value);
+        if (this.value !== "0") {
+            jobInputs.forEach(input => input.style.display = "block");
+        } else {
+            jobInputs.forEach(input => input.style.display = "none");
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const incomeSelect = document.getElementById("income");
+    const incomeInputs = document.querySelectorAll(".income-hide-input");
+
+    // Initially hide income-related inputs
+    incomeInputs.forEach(input => input.style.display = "none");
+	
+    // Initialize nice-select
+    $(incomeSelect).niceSelect();
+
+    // Manually trigger the change event after nice-select initialization
+    $(incomeSelect).on('change', function () {
+        console.log("Nice-select income dropdown changed, value:", this.value);
+        if (this.value === "2") {
+            incomeInputs.forEach(input => input.style.display = "block");
+        } else {
+            incomeInputs.forEach(input => input.style.display = "none");
+        }
+    });
 });

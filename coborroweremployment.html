@@ -57,7 +57,7 @@
                 <div class="row g-4 autoplay-form-section">
                     <div class="col-md-12">
                         <div class="autoplay-grp">
-                            <label for="residence" class="label-title">Current Co-borrower Employment Type</label>
+                            <label for="job-type" class="label-title">Current Co-borrower Employment Type</label>
                             <select id="job-type" name="job-type">
                                 <option value="0">
                                     Please Select
@@ -77,13 +77,13 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-12 jod-hide-input">
+                    <div class="col-md-12 job-hide-input">
                         <div class="autoplay-grp">
                             <label for="fname" class="label-title">Co-borrower Employer Name</label>
                             <input type="text" id="fname" required>
                         </div>
                     </div>
-                    <div class="col-md-12 jod-hide-input">
+                    <div class="col-md-12 job-hide-input">
                         <div class="autoplay-grp">
                             <label for="lname" class="label-title">Co-Borrower Job Title</label>
                             <input type="text" id="lname" required>
@@ -108,7 +108,7 @@
                             <input type="number" id="residence-payment" placeholder="$0.00" required>
                         </div>
                     </div>
-                    <div class="col-md-6 mt-6 jod-hide-input">
+                    <div class="col-md-6 mt-6 job-hide-input">
                         <div class="autoplay-grp">
                             <label for="number" class="label-title">
                                 How long have they been employed?
@@ -150,7 +150,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-6 mt-6 jod-hide-input">
+                    <div class="col-md-6 mt-6 job-hide-input">
                         <div class="autoplay-grp">
                             <label for="number" class="label-title hidden-label">
                                 How long have you lived here?
@@ -208,14 +208,14 @@
                                 <option value="1">
                                     Co-borrower does not have additional income
                                 </option>
-                                <option value="2" selected>
+                                <option value="2">
                                     Co-borrower has additional income
                                 </option>
                             </select>
                         </div>
                     </div>
 
-                    <div class="col-md-12">
+                    <div class="col-md-12 income-hide-input">
                         <div class="autoplay-grp">
                             <label for="number" class="label-title">
                                 Income Type
@@ -246,7 +246,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-12">
+                    <div class="col-md-12 income-hide-input">
                         <div class="autoplay-grp">
                             <label for="number" class="label-title">
                                 Income Frequency
@@ -268,7 +268,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-12">
+                    <div class="col-md-12 income-hide-input">
                         <div class="autoplay-grp">
                             <label for="residence-payment" class="label-title">
                                 Gross Annual Income
