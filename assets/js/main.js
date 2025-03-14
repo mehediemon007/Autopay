@@ -132,3 +132,45 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+// document
+// 	.getElementById("formattedPhoneInput")
+// 	.addEventListener("input", function (e) {
+// 		let value = e.target.value.replace(/\D/g, ""); // Remove non-numeric characters
+
+// 		if (value.length > 10) {
+// 			value = value.slice(0, 10); // Limit to max 10 digits
+// 		}
+
+// 		// Format as XXX-XXX-XXXX
+// 		if (value.length > 3) {
+// 			value = value.slice(0, 3) + "-" + value.slice(3);
+// 		}
+// 		if (value.length > 7) {
+// 			value = value.slice(0, 7) + "-" + value.slice(7);
+// 		}
+
+// 		e.target.value = value;
+// 	});
+
+document
+	.getElementById("formattedPhoneInput")
+	.addEventListener("input", function (e) {
+		let value = e.target.value.replace(/\D/g, ""); // Remove non-numeric characters
+
+		// Limit to 10 digits
+		if (value.length > 10) {
+			value = value.slice(0, 10);
+		}
+
+		// Insert hyphens dynamically while typing
+		value = value.replace(/^(\d{3})(\d{0,3})?(\d{0,4})?$/, function (_, p1, p2, p3) {
+			let formatted = p1;
+			if (p2) formatted += "-" + p2;
+			if (p3) formatted += "-" + p3;
+			return formatted;
+		});
+
+		e.target.value = value;
+	});
+
