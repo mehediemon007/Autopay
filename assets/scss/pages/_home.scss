@@ -7,7 +7,7 @@
 
 //progress-custom-area
 .progress-container-wrap {
-	margin: 0 auto;
+	margin: 1rem auto 0 !important;
 	max-width: 570px;
 }
 .progress-container,
@@ -139,6 +139,10 @@
 	background: transparent;
 }
 .head-title {
+	font-size: 1.75rem;
+	line-height: 1.2;
+	padding: 1rem;
+	margin-bottom: .5rem !important;
 	svg {
 		width: 16px;
 		height: 16px;

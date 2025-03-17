@@ -848,7 +848,7 @@ iframe {
 }
 
 .progress-container-wrap {
-  margin: 0 auto;
+  margin: 1rem auto 0 !important;
   max-width: 570px;
 }
 
@@ -983,6 +983,10 @@ iframe {
 }
 
 .head-title {
+  font-size: 1.75rem;
+  line-height: 1.2;
+  padding: 1rem;
+  margin-bottom: 0.5rem !important;
   /* Change the tooltip background and text color */
   /* Change tooltip arrow color */
 }
